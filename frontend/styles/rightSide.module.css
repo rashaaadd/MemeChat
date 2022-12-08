@@ -1,0 +1,36 @@
+.RightSide{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    transition: ease all .5s;
+}
+
+.navIcons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.navIcons:hover{
+    cursor: pointer;
+}
+.navIcons>img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.navIcons>img:hover{
+    cursor: pointer;
+}
+
+.r_button{
+    height: 3rem;
+    width: 80%;
+    align-self: center;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .RightSide{
+        display: none;
+    }
+}
