@@ -10,11 +10,11 @@
 
 @media only screen and (max-width: 768px) {
     .PostSide{
-        width: 100%;
+        width: 100% !important; 
     }
 }
 @media only screen and (max-width: 992px) {
     .PostSide{
-        width: min-content;
+        width: 60%;
     }
 }

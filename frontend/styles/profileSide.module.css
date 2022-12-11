@@ -16,6 +16,6 @@
 
 @media only screen and (max-width: 992px) {
     .ProfileSide{
-        width: min-content;
+        width: 40%;
     }
 }

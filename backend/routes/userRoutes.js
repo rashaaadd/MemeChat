@@ -2,7 +2,8 @@ import express from 'express'
 import {
     registerUser,
     loginUser,
-    getHomePage
+    getUser,
+    data
 } from '../controllers/userController.js'
 import protect from '../middleware/authMiddleware.js'
 
@@ -14,7 +15,9 @@ router.post("/register",registerUser)
 
 router.post("/login",loginUser)
 
-router.get('/user',protect,getHomePage)
+router.get('/user',protect,getUser)
+
+router.get('/hello',data)
 
 
 export default router;

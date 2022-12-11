@@ -1,23 +1,26 @@
 import axios from "axios";
+import Image from "next/image";
 import React from "react";
+import Cover from "../public/img/cover.jpg"
+import ProfileImage from "../public/img/profileImg.jpg"
 import { useSelector } from "react-redux";
 import styles from "../styles/profileCard.module.css";
 
+
+
+
 function ProfileCard() {
   const ProfilePage = true;
-  const user = useSelector((state)=> {
-    console.log(state,'....................',state.user)
-    return state.users.user
-  })
+  const user = useSelector((state)=>state.users)
   return (
     <div className={styles.ProfileCard}>
       <div className={styles.ProfileImages}>
-        <img src="./img/cover.jpg" alt="" />
-        <img src="./img/profileImg.jpg" alt="" />
+        <Image src={Cover} alt="" />
+        <Image src={ProfileImage} alt="" />
       </div>
       <div className={styles.ProfileName}>
-        <span>{user?.fname} {user?.lname}</span>
-        <span>{user?.details.work}</span>
+        <span>hELLO sIR</span>
+        <span>Hello</span>
       </div>
       <div className={styles.FollowStatus}>
         <hr />
